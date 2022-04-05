@@ -45,16 +45,47 @@
 //	printf("合計は%dです\n", sum);
 //}
 
+//int main(void)
+//{
+//
+//	printf("数字を入力して下さい\n");
+//	int a;
+//	int sum, count;
+//	sum = 0;
+//	char str[256];
+//	gets_s(str);
+//
+//	if (str[0] == 0)
+//	{
+//		printf("〇数字を入力して下さい\n");
+//		return 0;
+//	}
+//	
+//	for (count = 0; count < 2; count++)
+//	{
+//		sscanf_s(str, "%d", &a);
+//		sum += a;
+//	}
+//
+//	printf("%d", sum);
+//	
+//}
+
 int main(void)
 {
+
+	printf("2つの数字を入力して下さい\n(例：13　スペース　15)\n");
+	int a, b;
 	char str[256];
 	gets_s(str);
 
-	printf("数字を入力して下さい");
-	if (str[0] == NULL)
+	if (str[0] == 0)
 	{
+		printf("〇数字を入力して下さい\n");
 		return 0;
 	}
-	sscanf_s("%s", str);
-	printf("%s", str);
+
+	sscanf_s(str, "%d %d", &a, &b);
+
+	printf("合計%dです", a + b);
 }
