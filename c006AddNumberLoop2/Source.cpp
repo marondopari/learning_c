@@ -38,6 +38,7 @@ int main(void)
 	int sum = 0;	//®”Œ^‚Ì•Ï”sum‚É‚O‚ğ‘ã“ü
 	int n;				//®”Œ^‚Ì•Ï”n‚ğ—pˆÓ‚·‚é
 	int num[10];
+	int count=0;
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -55,14 +56,15 @@ int main(void)
 		sscanf_s(str, "%d", &n);	//•¶š—ñ‚ğ®”‚É•ÏŠ·
 		num[i] = n;
 		sum = sum + n;				//—İŒv
+		count = i+1;
 	}
 
-	for (int i = 0; i <num[i]; i++)
+	for (int i = 0; i < count; i++)
 	{
 		printf("%d+", num[i]);
 	}
 
-	printf("‡Œv‚Í%d‚Å‚·\n", sum);
+	printf("\n‡Œv‚Í%d‚Å‚·\n", sum);
 
 
 }
