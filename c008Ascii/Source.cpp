@@ -2,5 +2,8 @@
 
 int main (void)
 {
-	printf("%c", 41);
+	for (int i = 0; i <= 127; i++)
+	{
+		printf("%c\n", i);
+	}
 }
