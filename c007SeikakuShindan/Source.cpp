@@ -132,5 +132,4 @@ void printError(void)
 {
 	printf("******1‚©‚Q‚ð“ü—Í‚µ‚Ä‰º‚³‚¢******\n");
 
-	return;
 }
