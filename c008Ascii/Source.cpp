@@ -2,13 +2,14 @@
 
 int main (void)
 {
-	int num = 0;
-	char text[256];
+	int num = 0;		//®”Œ^‚Ì•Ï”num‚É‚O‚ğ‘ã“ü
+	char text[256];		//text‚Æ‚¢‚¤”z—ñ‚ğéŒ¾A—v‘f”256
 
+	//‚P‚Q‚V‰ñƒ‹[ƒv‚·‚é
 	for (int i = 0; i <= 127; i++)
 	{
-		sprintf_s(text,"%d\n", num+i);
-		printf("%s", text);
+		sprintf_s(text,"%d\n", num+i);	//”’l‚ğ•¶š—ñ‚É•ÏŠ·
+		printf("%s", text);				//•¶š—ñ‚ğo—Í‚·‚é
 
 	}
 }
