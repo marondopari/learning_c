@@ -2,8 +2,8 @@
 
 int main (void)
 {
-	for (int i = 0; i <= 127; i++)
+	for (int i = 32; i <= 126; i++)
 	{
-		printf("%c\n", i);
+		printf("%d %c\n", i,i);
 	}
 }
