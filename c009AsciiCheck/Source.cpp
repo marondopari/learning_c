@@ -13,13 +13,13 @@ int main(void)
 	}
 
 	//‘å•¶Žš‚©”»’è
-	if (mozi >= 'A'&&mozi <= 'Z')
+	else if (mozi >= 'A'&&mozi <= 'Z')
 	{
 		printf("‘å•¶Žš‚Å‚·\n");
 	}
 
 	//”Žš‚©”»’è
-	if (mozi >= '0'&&mozi <= '9')
+	else if (mozi >= '0'&&mozi <= '9')
 	{
 		printf("”Žš‚Å‚·\n");
 	}
@@ -28,4 +28,5 @@ int main(void)
 	{
 		printf("‹L†‚Å‚·");
 	}
+
 }
