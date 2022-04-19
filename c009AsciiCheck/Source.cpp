@@ -32,21 +32,19 @@
 //}
 
 
-void Add32(int a);	//プロトタイプ宣言
+int Add32(int a);	//プロトタイプ宣言
 
 int main(void)
 {
-	int n;	//整数型の変数n
-	printf("数字を入力して下さい\n");
-	scanf_s("%d", &n);	//入力
+	int n=Add32(5);
 
-	Add32(n);		//変数nを指定してAdd32関数を呼び出す
+	printf("%d", n);
 	return 0;
 
 }
 
-void Add32(int a)
+int Add32(int a)
 {
-	printf("%d", a + 32);	//32を足す
-	return;
+	int goukei= a + 32;	//32を足す
+	return goukei;
 }
