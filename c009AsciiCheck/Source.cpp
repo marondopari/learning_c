@@ -23,4 +23,9 @@ int main(void)
 	{
 		printf("”š‚Å‚·\n");
 	}
+
+	else
+	{
+		printf("‹L†‚Å‚·");
+	}
 }
