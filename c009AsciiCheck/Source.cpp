@@ -6,6 +6,7 @@ int main(void)
 	char mozi;	//charŒ^‚Ì•Ï”
 	printf("1•¶š‚ğ“ü—Í‚µ‚Ä‰º‚³‚¢\n");
 	scanf_s("%c", &mozi);	//•¶š‚Ì“ü—Í
+	printf("%c %d", mozi,mozi);
 	int n = Add32(mozi);
 
 	//¬•¶š‚©”»’è
