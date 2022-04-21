@@ -20,7 +20,7 @@ int main(void)
 	{
 		
 		printf("‘å•¶š‚Å‚·\n");
-		printf("%d",n);
+		printf("%c %d",n,n);
 	}
 
 	//”š‚©”»’è
