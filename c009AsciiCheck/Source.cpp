@@ -7,12 +7,13 @@ int main(void)
 	char mozi;	//charŒ^‚Ì•Ï”
 	printf("1•¶Žš‚ð“ü—Í‚µ‚Ä‰º‚³‚¢\n");
 	scanf_s("%c", &mozi);	//•¶Žš‚Ì“ü—Í
-	int n = Add32(mozi);
-	int b = De32(mozi);
+	
+	
 
 	//¬•¶Žš‚©”»’è
 	if (mozi >= 'a'&&mozi <= 'z')
 	{
+		int b = De32(mozi);
 		printf("%c %d", b, b);
 		printf("¬•¶Žš‚Å‚·\n");
 	}
@@ -20,7 +21,7 @@ int main(void)
 	//‘å•¶Žš‚©”»’è
 	else if (mozi >= 'A'&&mozi <= 'Z')
 	{
-		
+		int n = Add32(mozi);
 		printf("‘å•¶Žš‚Å‚·\n");
 		printf("%c %d",n,n);
 	}
