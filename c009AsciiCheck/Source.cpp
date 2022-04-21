@@ -17,7 +17,6 @@ int main(void)
 	//‘å•¶Žš‚©”»’è
 	else if (mozi >= 'A'&&mozi <= 'Z')
 	{
-		printf("%d", n);
 		printf("‘å•¶Žš‚Å‚·\n");
 	}
 
@@ -45,6 +44,6 @@ int main(void)
 
 int Add32(int a)
 {
-	int goukei= a + 32;	//32‚ð‘«‚·
+	int goukei=printf("%c%d" ,a ,32);	//32‚ð‘«‚·
 	return goukei;
 }
