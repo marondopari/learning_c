@@ -1,39 +1,46 @@
 #include<stdio.h>
 
+//プロトタイプ宣言
 void printHelloWorld(void);
 void printNumber(int a);
 void printChar(char b);
 
 int main(void)
 {
-	printHelloWorld();
+	printHelloWorld();	//関数呼び出し
 
-	printNumber(10);
+	printNumber(10);	//関数呼び出し
 
-	int mozi;
+	int mozi;	//整数型の変数
 	printf("\n文字を入力して下さい\n");
-	scanf_s("%d", &mozi);
-	printChar(mozi);
+	scanf_s("%d", &mozi);//入力
+	printChar(mozi);	//関数呼び出し
 
 	return 0;
 }
 
+//HelloWorldを表示する関数
 void printHelloWorld(void)
 {
 	printf("HelloWorld\n");
 
 }
 
+//10を表示する関数
 void printNumber(int a)
 {
 	printf("%d",a);
 }
 
+//表示できない文字だったらreturnでぬけて、
+//表示できる文字だったらprintfで文字として表示する関数
 void printChar(char b)
 {
+	//32より小さく126より大きくなかったら
 	if (!(b >= 32&&b <= 126))
 	{
-		return;
+		return;	//抜ける
 	}
-	printf("%c", b);
+
+	printf("%c", b);	//入力された文字を表示
 }
