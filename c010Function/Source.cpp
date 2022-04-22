@@ -1,13 +1,13 @@
 #include<stdio.h>
 
-void print(void);
+void printHelloWorld(void);
 
 int main(void)
 {
-	print();
+	printHelloWorld();
 }
 
-void print(void)
+void printHelloWorld(void)
 {
 	printf("HelloWorld");
 }
