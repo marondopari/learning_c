@@ -35,8 +35,4 @@ void printChar(char b)
 	{
 		printf("%c", b);
 	}
-	else
-	{
-		return;
-	}
 }
