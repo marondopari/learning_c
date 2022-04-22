@@ -31,8 +31,9 @@ void printNumber(int a)
 
 void printChar(char b)
 {
-	if (b >= 32&&b <= 126)
+	if (!(b >= 32&&b <= 126))
 	{
-		printf("%c", b);
+		return;
 	}
+	printf("%c", b);
 }
