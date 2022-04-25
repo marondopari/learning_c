@@ -17,7 +17,6 @@ int main(void)
 	scanf_s("%d", &mozi);//入力
 	printChar(mozi);	//関数呼び出し
 
-	IsChar(mozi);
 
 	return 0;
 }
@@ -39,10 +38,8 @@ void printNumber(int a)
 //表示できる文字だったらprintfで文字として表示する関数
 void printChar(char b)
 {
-
-	IsChar(b);	//関数呼び出し
+	bool isChar= IsChar(b);
 	
-
 	printf("%c", b);	//入力された文字を表示
 }
 
