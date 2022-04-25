@@ -4,6 +4,7 @@
 void printHelloWorld(void);
 void printNumber(int a);
 void printChar(char b);
+bool IsChar(char c);
 
 int main(void)
 {
@@ -15,6 +16,8 @@ int main(void)
 	printf("\n•¶Žš‚ð“ü—Í‚µ‚Ä‰º‚³‚¢\n");
 	scanf_s("%d", &mozi);//“ü—Í
 	printChar(mozi);	//ŠÖ”ŒÄ‚Ño‚µ
+
+	IsChar(mozi);
 
 	return 0;
 }
@@ -43,4 +46,15 @@ void printChar(char b)
 	}
 
 	printf("%c", b);	//“ü—Í‚³‚ê‚½•¶Žš‚ð•\Ž¦
+}
+
+bool IsChar(char c)
+{
+	//32‚æ‚è¬‚³‚­126‚æ‚è‘å‚«‚­‚È‚©‚Á‚½‚ç
+	if (!(c >= 32 && c <= 126))
+	{
+		return false;	//”²‚¯‚é
+	}
+
+	return true;
 }
