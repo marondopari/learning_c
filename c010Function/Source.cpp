@@ -39,22 +39,21 @@ void printNumber(int a)
 //表示できる文字だったらprintfで文字として表示する関数
 void printChar(char b)
 {
-	//32より小さく126より大きくなかったら
-	if (!(b >= 32&&b <= 126))
-	{
-		return;	//抜ける
-	}
+
+	IsChar(b);	//関数呼び出し
+	
 
 	printf("%c", b);	//入力された文字を表示
 }
 
+//表示出来るならtrue、できないならfalseを返す関数
 bool IsChar(char c)
 {
 	//32より小さく126より大きくなかったら
 	if (!(c >= 32 && c <= 126))
 	{
-		return false;	//抜ける
+		return false;	//偽を返す
 	}
 
-	return true;
+	return true;		//真を返す
 }
