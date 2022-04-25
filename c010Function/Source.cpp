@@ -38,7 +38,13 @@ void printNumber(int a)
 //表示できる文字だったらprintfで文字として表示する関数
 void printChar(char b)
 {
-	bool isChar= IsChar(b);
+	bool isChar= IsChar(b);	//bool変数を用意
+
+	//入力された文字が表示できない場合
+	if (isChar == false)
+	{
+		return;	//抜ける
+	}
 	
 	printf("%c", b);	//入力された文字を表示
 }
