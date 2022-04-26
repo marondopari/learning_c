@@ -15,51 +15,33 @@ int main(void)
 	score = f;	//ランダムの数値をスコアに入れる
 	printf("<%dです>\n", score);	//スコア表示
 
-	printf("続けますか。\nｙ（はい）：ｎ（いいえ）> ");
-	scanf_s("%c", &str);	//入力
-
-	//ｎキーが押されたら
-	if (str == 'n')
+	for (;;)
 	{
-		printf("\nスコア:%d\n", score);	//スコア表示
+		printf("続けますか。\nｙ（はい）：ｎ（いいえ）> ");
+		scanf_s("%c", &str);	//入力
 
-	}
-	//yキーが押されたら
-	else if (str == 'y')
-	{
-		int v = randam();			//関数を呼ぶ
-		printf("<%dです>\n", v);	//表示
-
-		int g = add(score, v);		//2つの合計を足す関数を呼ぶ
-		score = g;					//スコアに足した数を入れる
-
-		printf("\nスコア:%d\n", score);	//スコア表示
-
-		bool tOne = tone(score);	//関数呼ぶ
-		//２１超えてたら
-		if (tOne==true)
+		//ｎキーが押されたら
+		if (str == 'n')
 		{
+			printf("\nスコア:%d\n", score);	//スコア表示
+			break;	//抜ける
 		}
-		//２１超えてなかったら
-		else if(tOne == false)
+		//yキーが押されたら
+		else if (str == 'y')
 		{
-			printf("続けますか。\nｙ（はい）：ｎ（いいえ）> ");
-			scanf_s("%c", &str);	//入力
+			int v = randam();			//関数を呼ぶ
+			printf("<%dです>\n", v);	//表示
 
-			if (str == 'n')
+			int g = add(score, v);		//2つの合計を足す関数を呼ぶ
+			score = g;					//スコアに足した数を入れる
+
+			printf("\nスコア:%d\n", score);	//スコア表示
+
+			bool tOne = tone(score);	//関数呼ぶ
+			//２１超えてたら
+			if (tOne == true)
 			{
-				printf("\nスコア:%d\n", score);	//スコア表示
-
-			}
-			else if(str == 'y')
-			{
-				int j = randam();
-				printf("<%dです>\n", j);	//表示
-
-				int o = add(score, j);		//2つの合計を足す関数を呼ぶ
-				score = o;
-
-				printf("\nスコア:%d\n", score);	//スコア表示
+				break;	//抜ける
 			}
 		}
 	}
