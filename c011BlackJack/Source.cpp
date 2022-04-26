@@ -2,17 +2,20 @@
 #include<stdlib.h>
 #include <time.h>
 
-void randam(void);
+int randam(int b);
 
 int main(void)
 {
-	randam();		//関数を呼ぶ
+	int g=0;
+	int f=randam(g);		//関数を呼ぶ
+
+	printf("%d\n", f);
 }
 
-void randam(void)
+int randam(int b)
 {
 	srand((unsigned)time(NULL));	////乱数の種に現在の時刻を指定
 	int a;		//整数型の変数aを用意
 	a=rand() % 13 + 1;	//1~13のランダムな数値
-	printf("%d\n", a);	//aの値を出力
+	return a;
 }
