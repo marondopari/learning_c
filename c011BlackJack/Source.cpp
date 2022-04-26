@@ -2,17 +2,16 @@
 #include<stdlib.h>
 #include <time.h>
 
-int randam(int b);
+int randam();
 
 int main(void)
 {
-	int g=0;
-	int f=randam(g);		//関数を呼ぶ
+	int f=randam();		//関数を呼ぶ
 
-	printf("%d\n", f);
+	printf("%d\n",f);
 }
 
-int randam(int b)
+int randam()
 {
 	srand((unsigned)time(NULL));	////乱数の種に現在の時刻を指定
 	int a;		//整数型の変数aを用意
