@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "c011BlackJack", "c011BlackJack.vcxproj", "{CF9CAD59-E0E4-4AA0-8460-5526F846662F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF9CAD59-E0E4-4AA0-8460-5526F846662F}.Debug|x64.ActiveCfg = Debug|x64
+		{CF9CAD59-E0E4-4AA0-8460-5526F846662F}.Debug|x64.Build.0 = Debug|x64
+		{CF9CAD59-E0E4-4AA0-8460-5526F846662F}.Debug|x86.ActiveCfg = Debug|Win32
+		{CF9CAD59-E0E4-4AA0-8460-5526F846662F}.Debug|x86.Build.0 = Debug|Win32
+		{CF9CAD59-E0E4-4AA0-8460-5526F846662F}.Release|x64.ActiveCfg = Release|x64
+		{CF9CAD59-E0E4-4AA0-8460-5526F846662F}.Release|x64.Build.0 = Release|x64
+		{CF9CAD59-E0E4-4AA0-8460-5526F846662F}.Release|x86.ActiveCfg = Release|Win32
+		{CF9CAD59-E0E4-4AA0-8460-5526F846662F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BEEDDC0-2C09-4572-B78C-7FA00126983E}
+	EndGlobalSection
+EndGlobal
