@@ -1,20 +1,22 @@
 #include <stdio.h>
 
-void en(int a);
-void dol(int b);
+int DolToYen(int dol);
+int YenToDol(int yen);
 
 int main(void)
 {
 
 }
 //ƒhƒ‹‚ğ‰~‚É•ÏŠ·‚·‚éŠÖ”
-void en(int a)
+int DolToYen(int dol)
 {
-	a*128.87;
+	int yen=dol*128.87;
+	return yen;
 }
 
 //‰~‚ğƒhƒ‹‚É•ÏŠ·‚·‚éŠÖ”
-void dol(int b)
+int YenToDol(int yen)
 {
-	b / 128.87;
+	int dol=yen / 128.87;
+	return dol;
 }
