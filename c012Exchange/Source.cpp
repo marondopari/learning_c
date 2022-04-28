@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int DolToYen(int dol);
-int YenToDol(int yen);
+float DolToYen(int dol);
+float YenToDol(int yen);
 
 #define ONEDOL 128.87	//1ƒhƒ‹128.87
 
@@ -20,9 +20,9 @@ int main(void)
 			printf("\nƒhƒ‹‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢>");
 			scanf_s("%d", &c);
 
-			int d = DolToYen(c);	//ŠÖ”ŒÄ‚Ô
+			float d = DolToYen(c);	//ŠÖ”ŒÄ‚Ô
 
-			printf("<%dƒhƒ‹‚Í%d‰~‚Å‚·>\n\n", c, d);
+			printf("<%dƒhƒ‹‚Í%f‰~‚Å‚·>\n\n", c, d);
 		}
 		else if (n == 2)
 		{	//‚Q‚¾‚Á‚½‚ç
@@ -30,9 +30,9 @@ int main(void)
 			printf("\n‰~‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢>");
 			scanf_s("%d", &a);
 
-			int b = YenToDol(a);	//ŠÖ”ŒÄ‚Ô
+			float b = YenToDol(a);	//ŠÖ”ŒÄ‚Ô
 
-			printf("<%dƒhƒ‹‚Í%d‰~‚Å‚·>\n\n", a, b);
+			printf("<%d‰~‚Í%fƒhƒ‹‚Å‚·>\n\n", a, b);
 		}
 		else if (n == 3)
 		{	//‚R‚¾‚Á‚½‚ç
@@ -42,15 +42,15 @@ int main(void)
 	}
 }
 //ƒhƒ‹‚ğ‰~‚É•ÏŠ·‚·‚éŠÖ”
-int DolToYen(int dol)
+float DolToYen(int dol)
 {
-	int yen=dol* ONEDOL;
+	float yen=dol* ONEDOL;
 	return yen;
 }
 
 //‰~‚ğƒhƒ‹‚É•ÏŠ·‚·‚éŠÖ”
-int YenToDol(int yen)
+float YenToDol(int yen)
 {
-	int dol=yen / ONEDOL;
+	float dol=yen / ONEDOL;
 	return dol;
 }
