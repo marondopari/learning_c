@@ -34,7 +34,8 @@ void printAdd(int a,int b)
 //表示する関数合計の値を返り値として返す関数
 int calcAndPrintAdd(int k, int l)
 {
-	printf("\n%d+%d=%d", k, l, calcAdd(k, l));
-	int gokei = k + l;
+	
+	int gokei = calcAdd(k, l);
+	printf("\n%d+%d=%d", k, l, gokei);
 	return gokei;
 }
