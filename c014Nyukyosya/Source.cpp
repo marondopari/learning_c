@@ -11,13 +11,15 @@ int main(void)
 	{
 		printf_s("入居者を入力して下さい\n");
 
+		gets_s(jumin[i]);		//文字列を入力
+								//空エンターを処理するためにscanfでなくgets
+
 		//空エンターだったら
-		if (jumin[0] == 0)
+		if (jumin[i][0] == 0)
 		{
 			break;			//ループから抜ける
 		}
 
-		scanf_s("%s", &jumin[i], sizeof(jumin[i]));
 	}
 
 	printf_s("入居者は\n");
