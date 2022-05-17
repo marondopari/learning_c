@@ -49,6 +49,7 @@ int main(void)
 
 		char str[256];		//char型の文字列の宣言
 		gets_s(str);		//文字列を入力
+							//scanfだと空エンターが処理できないのでget_sを使う
 
 		//空エンターだったら
 		if (str[0] == 0)
