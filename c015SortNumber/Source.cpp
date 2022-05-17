@@ -5,7 +5,8 @@ int main(void)
 {
 	int count = 0;//何回ループしたかをカウントする変数
 	int n;		//整数型の変数nを用意する
-	int num[10];		//numという配列を宣言、要素数10
+	int num[NUM];		//numという配列を宣言、要素数10
+	int tmp;
 
 	for (int i=0;i<NUM;i++,count++)
 	{
@@ -22,6 +23,20 @@ int main(void)
 
 		sscanf_s(str, "%d", &n);	//入力された文字列を整数に変換
 		num[i] = n;					//要素num[i]に入力された整数を代入
+	}
+
+	//	昇順ソートのプログラム
+	for (int i = 0; i < count; i++)
+	{
+		for (int j = i + 1; j < count; j++)
+		{
+			if (num[i] > num[j])
+			{
+				tmp = num[i];
+				num[i] = num[j];
+				num[j] = tmp;
+			}
+		}
 	}
 
 	//カウントの数だけループ
