@@ -1,12 +1,14 @@
 #include <stdio.h>
 #define NUM 10		//限界値
 
+void sort(int count, int num[]);
+
 int main(void)
 {
 	int count = 0;//何回ループしたかをカウントする変数
 	int n;		//整数型の変数nを用意する
 	int num[NUM];		//numという配列を宣言、要素数10
-	int tmp;
+	
 
 	for (int i=0;i<NUM;i++,count++)
 	{
@@ -25,6 +27,19 @@ int main(void)
 		num[i] = n;					//要素num[i]に入力された整数を代入
 	}
 
+	sort(count, num);
+
+	//カウントの数だけループ
+	for (int i = 0; i < count; i++)
+	{
+		printf("%d\n", num[i]);		//配列の中身を順番に表示
+	}
+}
+
+void sort(int count,int num[])
+{
+	int tmp;
+
 	//	昇順ソートのプログラム
 	for (int i = 0; i < count; i++)
 	{
@@ -37,11 +52,5 @@ int main(void)
 				num[j] = tmp;
 			}
 		}
-	}
-
-	//カウントの数だけループ
-	for (int i = 0; i < count; i++)
-	{
-		printf("%d\n", num[i]);		//配列の中身を順番に表示
 	}
 }
